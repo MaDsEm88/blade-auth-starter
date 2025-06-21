@@ -1,0 +1,5 @@
+.env
+.ronin/
+node_modules/
+.blade/
+schema/.ronin/
