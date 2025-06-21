@@ -1,6 +1,5 @@
 import  { useState, useEffect } from 'react';
-import { Link } from '@ronin/blade/client/components';
-import { Image } from '@ronin/react';
+import { Link, Image } from '@ronin/blade/client/components';
 
 interface User {
   id: string;

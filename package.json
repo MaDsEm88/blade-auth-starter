@@ -10,7 +10,6 @@
   "author": "ronin",
   "dependencies": {
     "@ronin/blade": "0.8.10",
-    "@ronin/react": "^0.1.4",
     "clsx": "^2.1.1",
     "hono": "^4.8.2",
     "react": "0.0.0-experimental-df12d7eac-20230510",
