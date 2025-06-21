@@ -30,7 +30,7 @@ A modern, full-stack authentication system built with **Blade React framework**,
 ### 1. Clone & Install
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/MaDsEm88/blade-auth-starter.git
 cd blade-example
 bun install
 ```
@@ -182,3 +182,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Blade Team](https://blade.im) for the amazing React framework
 - [Better Auth](https://better-auth.com) for the authentication library
 - [RONIN](https://ronin.co) for the edge database platform
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## ⭐ Support
+
+If this project helped you, please give it a ⭐ on GitHub!
