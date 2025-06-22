@@ -31,7 +31,7 @@ A modern, full-stack authentication system built with **Blade React framework**,
 
 ```bash
 git clone https://github.com/MaDsEm88/blade-auth-starter.git
-cd blade-example
+cd blade-auth-starter
 bun install
 ```
 
@@ -173,9 +173,6 @@ Update your OAuth app settings:
 4. Push to branch: `git push origin feature/amazing-feature`
 5. Open a Pull Request
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 

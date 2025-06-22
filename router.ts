@@ -5,16 +5,22 @@ import { ronin } from "@ronin/hono";
 
 const app = new Hono();
 
+// Get environment variables - Blade 0.9.3+ handles server/client context automatically
+const RONIN_TOKEN = process.env["BLADE_RONIN_TOKEN"] || '';
+const CORS_ORIGIN = process.env["BLADE_BETTER_AUTH_URL"] || 'http://localhost:3000';
+
 // Add RONIN middleware with explicit token
-app.use("*", ronin({
-  token: process.env["RONIN_TOKEN"] as string
-}));
+if (RONIN_TOKEN) {
+  app.use("*", ronin({
+    token: RONIN_TOKEN
+  }));
+}
 
 // Configure CORS for all routes (Better Auth needs this)
 app.use(
   "*",
   cors({
-    origin: process.env["BETTER_AUTH_URL"] || "http://localhost:3000",
+    origin: CORS_ORIGIN,
     allowHeaders: ["Content-Type", "Authorization"],
     allowMethods: ["POST", "GET", "OPTIONS"],
     exposeHeaders: ["Content-Length"],
@@ -22,7 +28,6 @@ app.use(
     credentials: true,
   })
 );
-
 
 // Manual session route
 app.get("/api/auth/session", async (c) => {
