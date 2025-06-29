@@ -1,4 +1,4 @@
-import { Link } from '@ronin/blade/client/components';
+import { Link } from 'blade/client/components';
 
 const AuthPage: React.FC = () => {
 
