@@ -9,7 +9,10 @@
   },
   "author": "ronin",
   "dependencies": {
-    "@ronin/blade": "0.9.3",
+    "@ronin/better-auth": "^1.0.0",
+    "@ronin/hono": "^0.1.2",
+    "better-auth": "^1.2.12",
+    "blade": "3.4.9",
     "clsx": "^2.1.1",
     "hono": "^4.8.2",
     "react": "0.0.0-experimental-df12d7eac-20230510",
